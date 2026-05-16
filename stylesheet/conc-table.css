@@ -1,0 +1,66 @@
+/* TABLE Who Was Jesus */
+table.conc_prob {
+    border-collapse: collapse;
+    border:solid 1px black;
+    margin-left: -2px;
+}
+table.conc_prob td {
+    padding:7px 0px; /* 4px 20px*/
+    text-align: center;
+    line-height: 20px;
+    height:45px; /* 39px */
+    vertical-align: middle;
+}
+table.conc_prob tr.conc-first-row > td {
+    height:20px;
+}
+table.conc_prob td:nth-child(1) {
+    border-right: solid 1px #999;
+}
+table.conc_prob td:nth-child(6){
+    text-align: left;
+    background-color: #ffffC4;
+    border-left: solid 1px #999;
+    /* padding-left: 0px; */
+}
+table.conc_prob td:nth-child(7) {
+    text-align: left;
+    background-color: #ffff96;
+    /* padding-left: 0px; */
+}
+table.conc_prob .imp2 {
+    background-color: #ffffC4;
+}
+table.conc_prob tr.bordertop1 > td {
+    border-top:solid 1px black;
+}
+table.conc_prob tr.bordertop2 > td {
+    border-top:solid 1px #999;
+}
+table.conc_prob div.hrz-bar {
+    display:inline-block;
+    border:solid 1px black;
+    padding-right: 2px;
+    text-align: right;
+}
+/* table.conc_prob .bgmantogod {
+    background-image:url(../images/bgMoviePart1_op.jpg);
+    background-size:100% 100%
+} */
+/* table.conc_prob .result-percent-width {
+    width:80px
+}
+
+table.conc_prob .result-percent-width2 {
+    width:40px
+}
+
+@media (min-width: 427px) {
+    table.conc_prob .result-percent-width {
+        width:120px
+    }
+    table.conc_prob .result-percent-width2 {
+        width:60px
+    }
+} */
+/* End Table */

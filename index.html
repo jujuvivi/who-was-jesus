@@ -1,0 +1,962 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Who Was Jesus?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Who Was Jesus?" />
+    <meta property="og:description" content="A Study on the Origin of Christianity" />
+    <meta property="og:image" content="https://www.who-was-jesus.com/images/7theories18.png" />
+    <!-- <meta property="og:url" content="https://www.FromChristToJesus.org" /> -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href='./stylesheet/fontawesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href="./stylesheet/comm.css?vvv56" rel="stylesheet">
+    <link href="./stylesheet/vert-menu.css?vvv31" rel="stylesheet">
+    <style type="text/css">
+        .site-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        .accroche-index {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            /* padding: 10px 0px; */
+        }
+
+        nav.vertical_nav_base {
+            width: 370px;
+            padding-bottom: 10px;
+            margin-top: 2px
+        }
+
+        div.btn-expand {
+            padding-top: 10px;
+            ;
+        }
+    </style>
+    <script type="text/javascript" defer src="./javascript/comm.js?vvv31"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            //console.log('DOM is fully loaded and parsed');
+            const subnavs = document.querySelectorAll('.menu--item__has_sub_menu');
+
+            for (var i = 0; i < subnavs.length; i++) {
+                const listLinks = subnavs[i].querySelector('.menu--link');
+                if (listLinks) {
+                    listLinks.addEventListener('click', function (e) {
+                        e.target.offsetParent.classList.toggle('menu--subitens__opened');
+                        e.stopPropagation();
+                    }, false);
+                }
+            }
+        });
+
+        function expandAllMenuItems(btn, nSite) {
+            const rootSite = document.getElementById('js-menu-' + nSite),
+                subnavs = rootSite.querySelectorAll('.menu--item__has_sub_menu');
+
+            const isExpanded = rootSite.dataset.expanded;
+            rootSite.dataset.expanded = isExpanded ? '' : '1';
+            btn.textContent = isExpanded ? 'Expand All' : 'Collapse All';
+
+            for (var i = 0; i < subnavs.length; i++) {
+                const listLinks = subnavs[i].querySelector('.menu--link');
+                if (listLinks) {
+                    if (isExpanded) {
+                        listLinks.offsetParent.classList.remove('menu--subitens__opened');
+                    } else {
+                        listLinks.offsetParent.classList.add('menu--subitens__opened');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="cls-body">
+    <!-- **************************************************************
+    ***	                        Header             	            ***
+    *************************************************************** -->
+    <header class="cls-header">
+        <!-- <div aaclass="flex-row"> -->
+        <!-- <div class="maintitle-index" style="color:white;position:absolute;left:0px;top:0px"> -->
+        <!-- <div class="maintitle-index">Jesus Myth</div> -->
+        <!-- </div> -->
+        <!-- <div aaclass="flex-column flex-title"> -->
+        <div class="page-title-cont"><a id="btn_top-menu_link" class="local_link no-underline" href="#"
+                onclick="return toggleSpanVisibility(this, 'btn_top-menu')">
+                <span class="page-title" , aaadata-arrow="\f107">Who Was Jesus?</span></a></div>
+
+        <div class="top-menu-cont" onclick="closeSpanVisibility('btn_top-menu')">
+            <div id="topjsmenu" class="link_target btn_top-menu js-menu vertical_nav" >
+                <div style="text-align: center;"><b>Three Sites in One</b></div>
+                <ul id="inner-top-panel" class="SpacingTop5 header-top-menu">
+                    <div class="no_page_sel">
+                        <ul class="SpacingTopMore">
+                            <li><a href="./jesuspuzzle/index.html">The Jesus Puzzle</a><!-- by <span class="man">Earl Doherty</span>.--></li>
+                            <li><a href="./fromchrist/index.html">From Christ to Jesus</a></li>
+                            <li><a href="./markgospel/index.html">Commentary on the Gospel of Mark</a><!-- by <span class="man">Mickael Turton</span> --></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- <div aaclass="accrochetitle" style="position:absolute;right:0px;top:0px;color:white;font-size: 16px;font-weight: normal;">Progress Starts with<br>Questioning Assumptions</div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </header>
+
+    <div class="layout-bottom">
+        <!-- **************************************************************
+        ***	                        Content             	            ***
+        *************************************************************** -->
+        <div aaclass="layout-right">
+            <div class="content" style="max-width:1600px">
+                <div style="margin:auto;max-width:900px">
+                    <div class="title4" style="margin-top: 20px;padding-bottom: 20px;">For the first Christians, he was</div>
+                    <div class="box" style="margin-top: 10px;max-width: 600px;margin:auto">
+                        <div class="bquote">
+                            "The Son is the image of the invisible God, the firstborn over all creation.
+                            For in him all things were created: things in heaven and on earth, visible and invisible,
+                            whether thrones or powers or rulers or authorities;
+                            all things have been created through him and for him.
+                            He is before all things, and in him all things hold together."
+                        </div>
+                        <div class="boxsrc bsrc">Colossians 1:15-17 (NIV)</div>
+                    </div>
+                    <br>
+                    <div class="box2" style="margin: auto;padding:10px;text-align: center;max-width: 550px;">
+                        But for these early believers, was he also a recent Jewish peasant
+                        who had a ministry in Galilee and died in Jerusalem?
+                    </div>
+                    <br>
+                    <br>
+                    <!-- <div class="box4" style="margin-top: 20px;"> -->
+                    <div class="title4">Progress Starts with<br>Questioning Assumptions</div>
+                    <!-- </div> -->
+                    <br>
+                    <br>
+                    <div style="text-align: center;"><a href="./images/7theories18.png"><img src="./images/7theories18.png" style="max-width: 100%;"></a></div>
+                    <div style="font-size:16px">
+                        <div class="padtop5">1. Loose estimation.</div>
+                        <div class="padtop5">2. Islam rejects that
+                            <a id="btn_title_link" class="local_link" href="#" onclick="return toggleSpanVisibility(this, 'btn_title')">Jesus died on the cross.<i class="a-icon-dropdown a-icon"></i></a>
+                        </div>
+                        <div class="link_target btn_title" aastyle="max-width:800px;margin:auto">
+                            <div aastyle="font-size:16px">
+                                Traditionally, mainstream Muslims believe that Jesus was not crucified but was bodily raised up to heaven by God,
+                                while Ahmadi Muslims reject this belief and instead contend that Jesus survived the crucifixion,
+                                was taken off the cross alive and continued to preach in India until his natural death.
+                                <div class="src"><a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Islamic_views_on_Jesus%27s_death">Wikipedia
+                                        Islamic views on Jesus's death</a></div>
+                            </div>
+                        </div>
+
+                        <div class="par padtop5">3. <i>One of the figure behind
+                                <a id="btn_figure_link" class="local_link" href="#" onclick="return toggleSpanVisibility(this, 'btn_figure')">the ministry in Galilee.<i class="a-icon-dropdown a-icon"></i></a>
+                            </i></div>
+                        <div class="link_target btn_figure" aastyle="max-width:800px;margin:auto">
+                            <div class="par">All HJ (Historical Jesus) theories are split in many different and sometimes contradictory versions.</div>
+                            <div aastyle="font-size:16px">
+                                Jesus is alternatively a Cynic Philosopher, Liberal Pharisee, Chasrismatic Hasid, Essene Heretic, Conservative Rabbi
+                                Antinomian Iconoclast, Magician/Exorcist/Faith Healer, Violent Zealot Revolutionary,
+                                Nonviolent Pacifist Resister, Apocalyptic Prophet, First-Century Proto-Communist, Early Feminist,
+                                Radical Social Reformer, Hellenistic Hero, <!-- Revolutionary --> Man of the Spirit...
+                            </div>
+                            <div class="padtop5">See <a target="_blank" class="ext" href="http://www.earlychristianwritings.com/theories.html">Historical Jesus Theories</a> by
+                                <span class="author">Peter Kirby</span> or <span class="src">Deconstructing Jesus</span> p.15 by <span class="author">R. Price</span>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padtop10">See <a href="./fromchrist/us/today.htm#theories">7 Theories</a> for more details.</div>
+                    <br>
+                    <div class="title4" id="great-myst">To investigate one of the greatest mystery of our time</div>
+                    <div class="title2">This Website is Hosting 3 Sites</div>
+                    <div class="title4">All sharing the same User Interface</div>
+                    <br>
+                    <div style="max-width:max-content;margin:auto;">
+                        <ul class="SpacingTop" style="list-style-type: none;">
+                            <li><a style="font-size: 20px" href="./jesuspuzzle/index.html">The Jesus Puzzle</a><!-- by <span class="man">Earl Doherty</span>.--></li>
+                            <li><a style="font-size: 20px" href="./fromchrist/index.html">From Christ to Jesus</a></li>
+                            <li><a style="font-size: 20px" href="./markgospel/index.html">Commentary on The Gospel of Mark</a><!-- by <span class="man">Mickael Turton</span> --></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <div class="flex-wrap center padtop10" style="gap:30px;justify-content: center;">
+                    <div style="max-width:380px">
+                        <div class="site-title">The Jesus Puzzle</div>
+                        <div class="accroche-index">Did Christianity begin with a mythical Christ?</div>
+                        <div class="accroche-index">by Earl Doherty</div>
+                        <div class="padtop10" style="text-align: left;">
+                            Clocking in at over half a million words, this site is arguably the best online resource for the
+                            'God Historicized' scenario, with a focus on the Epistles—similar in depth to the book <span class="src">Jesus: Neither God nor Man</span>.<br>
+                            <!-- You will finf here everything you need: Josephus,  -->
+                            <div class="padtop5">The 16 Supplementary volumes provide essential background support for the theory.</div>
+                            <div class="padtop5">Additionally, a significant portion is dedicated to scholarly debates, 
+                                responses to critics, and reviews of relevant literature.</div>
+
+
+                            <!-- In half a million words, like the book <span class="bsrc">Jesus: Neither God nor Man</span>,
+                            it focuses on the Epistles to be arguably the best web site supporting 
+                            the scenario of a God Historicized.<br> -->
+                            <div class="padtop5">Full copy with some UI redesign of <a class="ext" 
+                                target="_blank" href="https://www.jesuspuzzle.com/jesuspuzzle/index.htm">the original</a>.</div>
+                        </div>
+                        <div class="btn-expand"><button aatitle="Expand All" onclick="expandAllMenuItems(this, 1)">Expand All</button></div>
+                        <nav class="vertical_nav_base vertical_nav js-menu" id="js-menu-1">
+                            <!-- <div class="menu-title aashowLR-block">The Jesus Puzzle</div> -->
+                            <!-- <div class="accrochemenu aashowLR-block" style="display: block">Did Christianity begin with a mythical Christ?</div> -->
+                            <div class="no_page_sel">
+                                <ul>
+                                    <li><a class="nav-link-index" href="./jesuspuzzle/index.html">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-nutshell">The Jesus Puzzle in a Nutshell</a></div>
+                                        <ul id="submenu-nutshell" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-nutshell" href="./jesuspuzzle/main/nutshell.html#part1">Part One - Pieces in the Puzzle</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-nutshell" href="./jesuspuzzle/main/nutshell.html#part2">Part Two - Problem Solutions to the Puzzle</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-nutshell" href="./jesuspuzzle/puzzle/main/nutshell.html#part3">Part Three - Solving the Jesus Puzzle</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12easypuz" href="./jesuspuzzle/main/puzzle.html">Jesus Puzzle in 12 Easy Pieces</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-sdsil">The Sound of Silence</a></div>
+                                        <ul id="submenu-sdsil" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-silintro" href="./jesuspuzzle/silence/silintro.html">Introduction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-siltop20" href="./jesuspuzzle/silence/siltop20.html">Top 20</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silrom" href="./jesuspuzzle/silence/silrom.html">Romans</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silcor" href="./jesuspuzzle/silence/silcor.html">1 &amp; 2 Corinthians</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silgals" href="./jesuspuzzle/silence/silgals.html">Galatians, Ephesians, Colossians, Philip.</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silthess" href="./jesuspuzzle/silence/silthess.html">1 &amp; 2 Thessalonians, 1 &amp; 2 Timothy, Titus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silhebrs" href="./jesuspuzzle/silence/silhebrs.html">Hebrews</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-siljampe" href="./jesuspuzzle/silence/siljampe.html">James, 1 &amp; 2 Peter</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-siljohns" href="./jesuspuzzle/silence/siljohns.html">1 &amp; 2 John, Jude, Revelation</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-sil20arg" href="./jesuspuzzle/silence/sil20arg.html">20 Arguable References to the Gospel Jesus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-silpost" href="./jesuspuzzle/silence/silpost.html">Postscript (with response to J.P. Holding)</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Main Articles</div>
+                                <ul>
+                                    <li><a class="nav-link-preamble" href="./jesuspuzzle/main/preamble.html">Preamble - Was There No Historical Jesus?</a></li>
+                                    <li><a class="nav-link-partone" href="./jesuspuzzle/main/partone.html">1 - A Conspiracy of Silence</a></li>
+                                    <li><a class="nav-link-parttwo" href="./jesuspuzzle/main/parttwo.html">2 - Who Was Christ Jesus?</a></li>
+                                    <li><a class="nav-link-partthre" href="./jesuspuzzle/main/partthre.html">3 - The Evolution of Jesus of Nazareth</a></li>
+                                    <li><a class="nav-link-postscpt" href="./jesuspuzzle/main/postscpt.html">Postscript</a></li>
+                                    <li><a class="nav-link-century2" href="./jesuspuzzle/main/century2.html">The Second Century Apologists</a></li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Supplementary</div>
+                                <ul>
+                                    <li><a class="nav-link-supp01" href="./jesuspuzzle/supp/supp01.html">1: Apollos of Alexandria</a></li>
+                                    <li><a class="nav-link-supp02" href="./jesuspuzzle/supp/supp02.html">2: A Solution to the First Epistle of John</a></li>
+                                    <li><a class="nav-link-supp03" href="./jesuspuzzle/supp/supp03.html">3: Who Crucified Jesus?</a></li>
+                                    <li><a class="nav-link-supp04" href="./jesuspuzzle/supp/supp04.html">4: The Odes of Solomon</a></li>
+                                    <li><a class="nav-link-supp05" href="./jesuspuzzle/supp/supp05.html">5: Tracing the Christian Lineage in Alexandria</a></li>
+                                    <li><a class="nav-link-supp06" href="./jesuspuzzle/supp/supp06.html">6: The Source of Paul's Gospel</a></li>
+                                    <li><a class="nav-link-supp07" href="./jesuspuzzle/supp/supp07.html">7: Transfigured on the Holy Mountain</a></li>
+                                    <li><a class="nav-link-supp08" href="./jesuspuzzle/supp/supp08.html">8: Christ as "Man"</a></li>
+                                    <li><a class="nav-link-supp09" href="./jesuspuzzle/supp/supp09.html">9: The Son in the Epistle to the Hebrews</a></li>
+                                    <li><a class="nav-link-supp10" href="./jesuspuzzle/supp/supp10.html">10: Reopening the Josephus Question</a></li>
+                                    <li><a class="nav-link-supp11" href="./jesuspuzzle/supp/supp11.html">11: The Gospel According to the Prophet John</a></li>
+                                    <li><a class="nav-link-supp12" href="./jesuspuzzle/supp/supp12One.html"></a></li>
+                                    <li class="menu--item menu--item__has_sub_menu" aastyle="padding-bottom: 5px;">
+                                        <div><a class="menu--link" data-submenu="submenu-suppl">12: Jesus in the Apostolic Fathers</a></div>
+                                        <ul id="submenu-suppl" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-clement inline-link" href="./jesuspuzzle/supp/supp12One.html#top">1 Clement - <a class="inline-link" href="./jesuspuzzle/supp/supp12One.html#shepher">The Shepherd of Hermas</a></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-barna inline-link" href="./jesuspuzzle/supp/supp12Two.html#top">Barnabas - <a class="inline-link" href="./jesuspuzzle/supp/supp12Two.html#ignace">Ignatius</a></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu" aastyle="padding-bottom: 5px;">
+                                        <div><a class="menu--link" data-submenu="submenu-suppl">13: The Mystery Cults and Christianity</a></div>
+                                        <ul id="submenu-suppl" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-supp13A" href="./jesuspuzzle/supp/supp13A.html">A. Introduction and Survey of the Cults</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-supp13B" href="./jesuspuzzle/supp/supp13B.html">B. Comparing the Cults and Christianity</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-supp13C" href="./jesuspuzzle/supp/supp13C.html">C. G. Wagner's Baptism &amp; Pagan Mysteries</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-supp13D" href="./jesuspuzzle/supp/supp13D.html">D. A Cult of Parallels: Pagan Myths &amp; Jesus</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-supp14 inline-link" href="./jesuspuzzle/supp/supp14One.html">14: The Cosmic Christ<span style="font-size: 14px"> of Hebrews <a class="inline-link" href="./jesuspuzzle/supp/supp14Two.html">Part 2</a> <a style="display:inline" href="./jesuspuzzle/supp/supp14Three.html">Part 3</a></span></a></li>
+                                    <li><a class="nav-link-supp15" href="./jesuspuzzle/supp/supp15.html">15: "Born of Woman"? Reexamining Gal. 4:4</a></li>
+                                    <li><a class="nav-link-supp16" href="./jesuspuzzle/supp/supp16.html">16: Josephus on the Rocks</a></li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Critiques & Feedback</div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-bottom: 5px;">
+                                        <div><a class="menu--link" data-submenu="submenu-revdis_cri">Critiques of the Mythicist Case</a></div>
+                                        <ul id="submenu-revdis_cri" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-mulcrit1 inline-link" href="./jesuspuzzle/critics/muller1.html">B. Muller <a class="inline-link" href="./jesuspuzzle/critics/muller2.html">Part 2</a> <a class="inline-link" href="./jesuspuzzle/critics/muller3.html">Part 3</a></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gakcrit inline-link" href="./jesuspuzzle/critics/gakusei1.html">Gakusei Don <a class="inline-link" href="./jesuspuzzle/critics/gakusei2.html">Part 2</a> <a class="inline-link" href="./jesuspuzzle/critics/aliet-gakusei.html">Part 3 by J. Aliet</a></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-miklic" href="./jesuspuzzle/critics/licona.html">M. Licona</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-casegoguel" href="./jesuspuzzle/critics/goguel.html">S.J. Case, M. Goguel</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-frstanton" href="./jesuspuzzle/critics/france.html">R.T. France, G.N. Stanton, M. Smith, I. Wilson</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rvoorst" href="./jesuspuzzle/critics/voorst.html">R.E. Van Voorst</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-chrzeic" href="./jesuspuzzle/critics/zeichman.html">C. Zeichman</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gakudon" href="./jesuspuzzle/critics/gakusei-JNGNM.html">GakuseiDon (Book Review of JNGNM)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-hoadpuz" href="./jesuspuzzle/critics/hoad.html">J. Hoad</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-pathol" href="./jesuspuzzle/critics/holding.html">J.P. Holding</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-paufred" href="./jesuspuzzle/critics/fredriksen.html">P. Fredriksen &amp; Others</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-jefgib" href="./jesuspuzzle/critics/gibson.html">J. Gibson and Me</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-minfelix" href="./jesuspuzzle/critics/DebatesFelix.html">Minucius Felix on IIDB</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-ascisai" href="./jesuspuzzle/critics/DebatesAscension.html">The Ascension of Isaiah on IIDB</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-revdis_fee">Reader Feedback and Author's Response:</a></div>
+                                        <ul id="submenu-revdis_fee" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-amzread" href="./jesuspuzzle/rfset/amazon.html">Reviews posted on Amazon</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rfauth">Feedback and Author’s Response :</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rf1" href="./jesuspuzzle/rfset/rfset1.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2000-2002</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rf2" href="./jesuspuzzle/rfset/rfset1a.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2002-2004</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rf3" href="./jesuspuzzle/rfset/rfset1b.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2004-2006</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rf4" href="./jesuspuzzle/rfset/rfset1c.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2006-2008</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-rf5" href="./jesuspuzzle/rfset/rfset1d.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2008-2010</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Reviews</div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu menu--subitens__opened">
+                                        <div><a class="menu--link" data-submenu="submenu-revdis_bkr">Book Reviews</a></div>
+                                        <ul id="submenu-revdis_bkr" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-burmac" href="./jesuspuzzle/bkrv/mack.html">Who Wrote the New Testament? (B. Mack)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-honfunk" href="./jesuspuzzle/bkrv/funk.html">Honest to Jesus (R. Funk)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-libspong" href="./jesuspuzzle/bkrv/spong.html">Liberating the Gospels (J.S. Spong)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-paulwil" href="./jesuspuzzle/bkrv/wilson.html"><span style="font-size: 14px">Paul: The Mind of the Apostle (A.N. Wilson)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-crossbir" href="./jesuspuzzle/bkrv/crossan.html">The Birth of Christianity (J.D. Crossan)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-casestrobel" href="./jesuspuzzle/bkrv/strobel.html">The Case for Christ (L. Strobel)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-revdis_art">Article Reviews</a></div>
+                                        <ul id="submenu-revdis_art" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-jenkspaul" href="./jesuspuzzle/artrv/jenks.html"><span style="font-size: 14px">What Did Paul Know About Jesus? (G.C. Jenks)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-geerjes" href="./jesuspuzzle/artrv/geering.html"><span style="font-size: 14px">How Did Jesus Become God and Why? (Geering)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wellsre" href="./jesuspuzzle/artrv/wells.html">Earliest Christianity (G. A. Wells)</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-carrcom" href="./jesuspuzzle/artrv/carrier.html"><i>Jesus Puzzle</i> Book Review (R. Carrier)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-revdis_bqe">Books Questionning the Existence of an HJ</a></div>
+                                        <ul id="submenu-revdis_bqe" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-jesmyst" href="./jesuspuzzle/bkrv/mysteries.html"><span style="font-size: 14px">The Jesus Mysteries (T. Freke &amp; P. Gandy)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-chrcons" href="./jesuspuzzle/bkrv/acharya.html"><span style="font-size: 14px">The Christ Conspiracy (Acharya S)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-elleg100" href="./jesuspuzzle/bkrv/ellegard.html"><span style="font-size: 14px">Jesus, 100 Years Before Christ (A. Ellegard)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-decprice" href="./jesuspuzzle/bkrv/deconstruct.html"><span style="font-size: 14px">Deconstructing Jesus (R. Price)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-jewzin" href="./jesuspuzzle/bkrv/zindler.html"><span style="font-size: 14px">The Jesus the Jews Never Knew (F. Zindler)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-incshri" href="./jesuspuzzle/bkrv/shrinking.html"><span style="font-size: 14px">The Incredible Shrinking Son of Man (R. Price)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-pagchris" href="./jesuspuzzle/bkrv/harpur.html"><span style="font-size: 14px">The Pagan Christ (T. Harpur)</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-magtrip" href="./jesuspuzzle/bkrv/magdalene.html"><span style="font-size: 14px">A Magdalene Triptych: Brown, Price, Longfellow</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-prenice" href="./jesuspuzzle/bkrv/prenice.html"><span style="font-size: 14px">The Pre-Nicene New Testament (R. Price)</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div style="max-width:375px">
+                        <div class="site-title">From&nbsp;Christ to&nbsp;Jesus</div>
+                        <div class="accroche-index">A Study on the Origin of Christianity</div>
+                        <div class="accroche-index">by Vincent Guilbaud</div>
+                        <div class="padtop10" style="text-align: left;">
+                            <div>My study summarizes the work of prominent mythicist historians.</div>
+                            <div class="padtop5">It outlines the Quest for the HJ and its ultimate failure,
+                                noting that the field is plagued by assumptions and constrained by heavy religious and cultural pressures.</div>
+                            <div class="padtop5">After pointing the primary challenges to the mainstream scholarly consensus,
+                                it examines what the Gospels, Epistles, and early non-biblical texts reveal about Jesus.
+                                Finally, it evaluates the validity of key non-Christian references used to support the HJ.
+
+                                <!-- A summary of the the work of main mythicist historians,
+                                it analyzed everything the Epistles, the Gospels and early non-Biblical texts say about Jesus,
+                                and examines their sources.
+                                Check the validity of a couple references to a HJ outside the Gospels. -->
+                                <!-- and how the stories were created and how they spread. -->
+                                <!-- Analyze the origin and spread of the early Jewish messianic movement across major Hellenistic
+                                centers, as documented in the Pauline Epistles. -->
+                                <!-- centered on the worship of "Christ Jesus. -->
+                                <!-- Check the reliability of the Gospels and validity references to an HJ. -->
+                            </div>
+                        </div>
+                        <div class="btn-expand"><button aatitle="Expand All" onclick="expandAllMenuItems(this, 3)">Expand All</button></div>
+                        <nav class="vertical_nav_base vertical_nav js-menu" id="js-menu-3" style="width: 375px">
+                            <div style="text-align: center;color:#ad2e2e">! Working Draft !</div>
+                            <!-- <div class="menu-title aashowLR-block">From&nbsp;Christ to&nbsp;Jesus</div> -->
+                            <!-- <div class="accrochemenu aanav-link-index" style="display: block">A Study on the Origin of Christianity</div> -->
+                            <div class="no_page_sel">
+                                <a class="nav-link-index first-menu" style="padding-left: 7px;" href="./fromchrist/index.html#">Abstract</a>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-summary">Summary</a></div>
+                                        <ul class="sub_menu" id="submenu-summary">
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#whetoday">1. Where are we today?</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#critbug">2. A Critical Bug</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#theepistles">3. The Epistles</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#thegospels">4. The Gospels</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#jesusoutside">5. Jesus Outside the Bible</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#debref">6. Debating References to a HJ</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-index" href="./fromchrist/index.html#conclutime">Conclusion</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 1 - Where are we today? -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1" aastyle="padding-top: 5px"><a href="./fromchrist/us/today.htm">1. Where are we today?</a></div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-questhist">A Problem of History</a></div>
+                                        <ul class="sub_menu" id="submenu-questhist">
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#whathist">What Does History Say?</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#theories">7 Theories on Jesus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#newdisc">New Discoveries</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#200years">200 Years of Failure</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-theores">A Theologian Reserved Domain</a></div>
+                                        <ul class="sub_menu" id="submenu-theores">
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#christworld">A Christian World</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#HiddenAgenda">A Hidden Agenda</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#6Assumptions">6 Dogmatic Assumptions</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#BiasedMethod">A Biased Methodology</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#HatedSubject">Ban &amp; Retaliation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-mainfind">Main Findings</a></div>
+                                        <ul class="sub_menu" id="submenu-mainfind">
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#otCollapse">OT Collapse</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#gospelfic">Gospel Fictions</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#relparal">A Religion of Parallels</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#gapknow">A Gap of Knowledge</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-wheretoday" href="./fromchrist/us/today.htm#risem">The Rise of the Jesus Myth</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- 2 - A Critical Bug in Mainstream Scenario -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/bug.htm">2. A Critical Bug in Mainstream Scenario</a></div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-mangod">A Man Deified or a God Historicized?</a></div>
+                                        <ul class="sub_menu" id="submenu-mangod">
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#2oppsce">Two Opposite Scenarios</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#euhem">Euhemerism</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#200years">Parsing 200 Years of Records</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><div><a href="#nevmen">The Epistles Never Mention any</a></div></li> -->
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-jeslif">The Epistles Never Mention any...</a></div>
+                                        <ul class="sub_menu sub_menu-red-check" id="submenu-jeslif" style="column-count: 2">
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#platime">Place &amp; Time</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#people">People</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#stories">Stories</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#sayings">Sayings</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#miracles">Miracles</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#passion">Passion Story</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-3myth">And Only Mention 3 Mythical Scenes</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-3myth">
+                                            <li class="sub_menu--item sub_menu-orange-check"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#sacmeal">Sacramental Meal</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#metcru">Metaphoric Crucifixion</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#visres">Visions of Resurrection</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-argsil">The Argument from Silence</a></div>
+                                        <ul class="sub_menu" id="submenu-argsil">
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#expect">What We Expect</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#silence">The Silence We Have</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-bug" href="./fromchrist/us/bug.htm#absurd">An Absurd Scenario</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-200" target="_blank" href="./fromchrist/us/vocab200.htm">Appendix: 200 Years of Records</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- 3 The Epistles -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/epistles.htm">3. Jesus in the Epistles: No Man Left Behind</a></div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu aa">
+                                        <div><a class="menu--link" data-submenu="submenu-authguide">An Authoritative Guide</a></div>
+                                        <ul class="sub_menu" id="submenu-authguide">
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#extrecords">Extant Records</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#whowhere">Who? Where? When?</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#teaconv">What?</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="lm-subtitle"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#episorig">Two Opposing Theories of Origin</a></li>
+
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-relctx">a. Religious Context</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-relctx">
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#judmut">A Multitude of Sects</a></li>
+                                            <li class="sub_menu--item sub_menu-red-check"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#jewbel">Jewish Theology</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#angeol_">Jewish Angelology</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#syncre">A Syncretism</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#ancmyst">Ancient Mysteries</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#greekphi">Greek Philosophies</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-jeswas">b. Preaching Jesus Was</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-jeswas">
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#songod">The Son of God</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#spirev">A Spirit, Revealer &amp; Mediator</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#islogos">The Logos</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#heavjud">A Heavenly Judge</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#antiadam">The Anti-Adam</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#SpiritualBody">A Heavenly Man</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-passto">c. Preaching an Act of Salvation</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-passto">
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#forhigh">A Forever High Priest</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#descasc">A Descend./Ascend. Redeemer</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#dyiris">A Dying &amp; Rising Savior</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-how">d. How? - By</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-how">
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#visheav">Visiting the Heavens</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#visscr">Visions &amp; Scriptures</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#posses">Being Possessed by Christ</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#bapeuc">Baptism &amp; Eucharist</a></li>
+                                            <li class="sub_menu--item sub_menu-red-check"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#gradual">Gradually Exalting the HJ</a></li>
+                                            <li class="sub_menu--item sub_menu-red-check"><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#progress">Progressing slowly to Rome</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-epistles" href="./fromchrist/us/epistles.htm#mystmes">Result</a></li>
+                                    <li><a class="nav-link-logos" href="./fromchrist/us/logos.htm">Appendix: The Jewish Logos</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- 4 The Gospels -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/gospels.htm">4. Jesus in the Gospels: Facts or Fictions?</a></div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-supernat-tale">A Jewish Fairy Tale</a></div>
+                                        <ul class="sub_menu" id="submenu-supernat-tale">
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#extrecords">Extant Records</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#whowhen">Who? Where? When?</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#fairtale">What?</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="lm-subtitle"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#reliab">Investigating their Reliability</a></li>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-litctx">a. Literary Context</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-litctx">
+                                            <li class="sub_menu--item" style="list-style-image:url(./images/BattleSmall.jpg)"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#jewwars">The Jewish Wars</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#gospreligctx">Religious Context</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#greeknovel">Greek &amp; Latin Novels</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#martstor">Martyrdom Stories</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#recpat">The Founding Myth Pattern</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#burproof">The Burden of Proof</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-jes-was">b. Preaching Jesus Was</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-jes-was">
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#founder">A Hero Founder</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#moses">A new Moses/Elijah/Elisha</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#jesstories">Birth-Temptation-Baptism...</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#mirac">A Performer of Miracles</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#cynic">A Cynic Philosopher</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#apoca">A Prophet of the Kingdom</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#martyr">A Martyrdom</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-pas-sto">c. Preaching a Passion Story</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-pas-sto">
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#jerus">Jerusalem &amp; the Temple</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#eucha">Eucharist &amp; Betrayed</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#trial">Trial by the Sanhedrin</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#pilate">Trial before Pilate</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#cross">Crucifixion</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#tomb">Death &amp; Empty Tomb</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu" style="padding-left:20px">
+                                        <div><a class="menu--link" data-submenu="submenu-how2">d. How? - By</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-how2">
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#copy">Copying each other</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#supheart">Fixating on Supernatural</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#midrash">Haggadic Midrash</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#symbol">Using Symbolism</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#cheat">Cheating History</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#liter">Using Literary Constructs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-gospels" href="./fromchrist/us/gospels.htm#jewmid">Result</a></li>
+                                    <!-- <li><a class="nav-link-q" href="./fromchrist/us/q.htm">Appendix: Q &amp; the Common Saying Tradition</a></li> -->
+                                    <!-- <li><a class="nav-link-acts" href="./fromchrist/us/acts.htm">Appendix: Rewriting History in Acts</a></li> -->
+                                </ul>
+                            </div>
+
+                            <!-- 5 Jesus Outside the Bible -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/jesusout.htm">5. Jesus Outside the Bible</a></div>
+                                <ul>
+                                    <li><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#unkjew"><img src="./images/RedCheck.gif">Jewish,
+                                            <img src="./images/RedCheck.gif">Greek &amp; <img src="./images/RedCheck.gif">Roman Authors</a></li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-norefearth">Christian Texts</a></div>
+                                        <ul class="sub_menu sub_menu-red-check" id="submenu-norefearth">
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#didache">The Didache</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#odessol">The Odes of Solomon</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#Hermas">The Shepherd of Hermas</a></li>
+                                            <li class="sub_menu--item sub_menu-orange-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#clement">1 Clement-Sayings</a></li>
+                                            <li class="sub_menu--item sub_menu-purple-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#barnabas">Barnabas-Sayings, Wonders &amp; Israel</a></li>
+                                            <li class="sub_menu--item sub_menu-green-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#othergosp">Other Gospels &amp; Acts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-indpast">Christian Apologists &amp; Church Fathers</a></div>
+                                        <ul class="sub_menu sub_menu-green-check" id="submenu-indpast">
+                                            <li class="sub_menu--item  sub_menu-red-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#tatian">Theophilus, Tatian &amp; Athenagoras</a></li>
+                                            <li class="sub_menu--item sub_menu-red-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#felix">Minucius Felix</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#justmart">Justin Martyr</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#ignapol">Ignatius, Polycarp, Papias, Irenaeus</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-2ndcent">2nd &amp; 3rd Century Beliefs</a></div>
+                                        <ul class="sub_menu sub_menu-red-check" id="submenu-2ndcent">
+                                            <li class="sub_menu--item"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#cathmaj">A Catholic Church in Majority</a></li>
+                                            <li class="sub_menu--item sub_menu-green-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#paulvscath">Paulinism against Catholicism</a></li>
+                                            <li class="sub_menu--item sub_menu-green-check"><a class="nav-link-outside" href="./fromchrist/us/jesusout.htm#common">Many Different Doctrines</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 6 Debating some possible references to a HJ -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/debate.htm">6. Debating Possible References to a HJ</a></div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-manctx">A Manipulated Context</a></div>
+                                        <ul class="sub_menu" id="submenu-manctx">
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#destruction">Targeted Destruction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#corruption">Scriptures Alterations</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#forgeries">A Flood of Forgeries</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#unique">A Unique Context</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-inter">Four Interpolations?</a></div>
+                                        <ul class="sub_menu" id="submenu-inter">
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#josephus">Josephus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#thessa">1 Thessalonians 2:15</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#timothy">1 Timothy 6:13</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#tacitus">Tacitus (Optional)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-jamesb">"James Brother of the Lord" Gal. 1:19</a></div>
+                                        <ul class="sub_menu" id="submenu-jamesb">
+                                            <li class="sub_menu--item" style="display: inline;"><a class="nav-link-debate" style="display: inline;" href="./fromchrist/us/debate.htm#ctxchapt">Context Chapter</a>
+                                                <span style="color: white;">-</span>
+                                            </li>
+                                            <li class="sub_menu--item" style="display: inline;"><a class="nav-link-debate" style="display: inline;" href="./fromchrist/us/debate.htm#ctxbro">Brother</a>
+                                                <span style="color: white;">-</span>
+                                            </li>
+                                            <li class="sub_menu--item" style="display: inline;"><a class="nav-link-debate" style="display: inline;" href="./fromchrist/us/debate.htm#ctxjames">James</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#manyposs">A Sibling</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#mythwins">A Brethren</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-refhj">Three References to a HJ in the Epistles?</a></div>
+                                        <ul class="sub_menu" id="submenu-refhj">
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#born">Born of a Woman</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#kata">Kata Sarka</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-debate" href="./fromchrist/us/debate.htm#supper">Last Supper, Died...</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Conclusion -->
+                            <div class="no_page_sel">
+                                <div class="mtitle1"><a href="./fromchrist/us/conclusion.htm">Conclusion</a></div>
+                                <!-- <ul>
+                                    <li><a class="nav-link-conc" href="./fromchrist/us/conclusion.htm">Christianity evolved from a MC to a HJ</a></li>
+                                    <li><a class="nav-link-conc" href="./fromchrist/us/conclusion.htm#timeline">Timeline</a></li>
+                                    <li><a class="nav-link-conc" href="./fromchrist/us/conclusion.htm#credits">Credits</a></li>
+                                </ul> -->
+                            </div>
+
+                            <!-- Appendix -->
+                            <div class="no_page_sel">
+                                <ul>
+                                    <li class="appendix-no"><a class="nav-link-christianity" href="./fromchrist/us/christianity.htm">Appendix: Non Historical Arguments</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div style="max-width:375px">
+                        <div class="site-title">Historical Commentary<br>on the Gospel of Mark</div>
+                        <div class="accroche-index">by Mickael A. Turton</div>
+                        <div class="padtop10" style="text-align: left;">
+                            A complete verse-by-verse commentary on the Gospel of Mark,
+                            focusing on the historicity of people, places, events, and sayings.
+                            <div class="padtop5">
+                                Of the four canonical Gospels, the first is the most significant, 
+                                as it served as the foundational blueprint for those that followed.
+                                This narrative introduced a tangible character—largely absent from the earlier Epistles—complete with a family, 
+                                a devoted circle of followers, and a sequence of miraculous events.
+                                <!-- The author, likely a member of the educated Jewish elite well-versed in Greco-Roman literature,
+                                remains arguably the most influential figure in human history.  -->
+                                <!-- Here too, it summarizes the work of prominent historians although most of them
+                                are not mythicist as the major party of Mark has been rejected 
+                                as fiction by most critical scholarship. -->
+                            </div>
+                            <div class="padtop5">Full copy with some UI redesign of <a class="ext" target="_blank" href="https://michaelturton.com/Mark/GMark_index.html">the original</a>.</div>
+                        </div>
+                        <div class="btn-expand"><button aatitle="Expand All" onclick="expandAllMenuItems(this, 2)">Expand All</button></div>
+                        <nav class="vertical_nav_base vertical_nav js-menu" id="js-menu-2">
+                            <!-- <div class="menu-title aashowLR-block">Historical Commentary<br>on the Gospel of Mark</div> -->
+                            <div class="no_page_sel">
+                                <ul>
+                                    <li><a class="nav-link-index" href="./markgospel/index.html">Home</a></li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-intro">Index</a></div>
+                                        <ul id="submenu-intro" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#intro">Introduction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#author">Author of Mark</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#date">Date of Composition</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#place">Place of Composition</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#sources">Sources of Mark</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-intro" href="./markgospel/GMark_intro.html#interp">Interpreting Mark</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-method" href="./markgospel/GMark_method.html">Methodology</a></li>
+                                    <li><a class="nav-link-ref" href="./markgospel/GMarkrefs.html">List of References</a></li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Ministry in Galilee</div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-1">Chapter 1</a></div>
+                                        <ul id="submenu-1" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.1.11"><span class="bsrc">1-11</span> John the Baptist</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.12.13"><span class="bsrc">12-13</span> Temptations</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.14.20"><span class="bsrc">14-20</span> Calls Disciples</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.21.28"><span class="bsrc">21-28</span> Exorcises Demons</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.29.39"><span class="bsrc">29-39</span> Heals Peter's Mother-in-Law</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1.p.40.45"><span class="bsrc">40-45</span> Heals a Leper</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-1" href="./markgospel/GMark01.html#1X">Excursus: Chiastic Structures</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link-chias-page" href="./markgospel/GMark_chiasm.html">Appendix: Annoted Chiastic Structures</a></li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-2">Chapter 2</a></div>
+                                        <ul id="submenu-2" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-2" href="./markgospel/GMark02.html#2.p.1.12"><span class="bsrc">1-12</span> Heals a Paralytic</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-2" href="./markgospel/GMark02.html#2.p.13.17"><span class="bsrc">13-17</span> Calls Levi the Tax Collector</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-2" href="./markgospel/GMark02.html#2.p.18.22"><span class="bsrc">18-22</span> Bridegroom Saying</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-2" href="./markgospel/GMark02.html#2.p.23.28"><span class="bsrc">23-28</span> Conflict with Pharisees</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-2" href="./markgospel/GMark02.html#2X">Excursus: Markan Interreferences</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-3">Chapter 3</a></div>
+                                        <ul id="submenu-3" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-3" data-tab_length="2" href="./markgospel/GMark03.html#3.p.1.6"><span class="bsrc">1-6</span> Heals a Withered Arm</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-3" data-tab_length="2" href="./markgospel/GMark03.html#3.p.7.12"><span class="bsrc">7-12</span> Followed by a Crowd</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-3" data-tab_length="3" href="./markgospel/GMark03.html#3.p.13.19"><span class="bsrc">13-19</span> Appoints the Twelve</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-3" data-tab_length="3" href="./markgospel/GMark03.html#3.p.20.30"><span class="bsrc">20-30</span> A House Divided</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-3" data-tab_length="2" href="./markgospel/GMark03.html#3.p.31.35"><span class="bsrc">31-35</span> Who is my Family?</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-3" href="./markgospel/GMark03.html#3X">Excursus: Mark-Q Overlaps</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-4">Chapter 4</a></div>
+                                        <ul id="submenu-4" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4.p.1.20"><span class="bsrc">1-20</span> Parable of the Sower</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4.p.21.25"><span class="bsrc">21-25</span> Sayings about the Lamp</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4.p.26.29"><span class="bsrc">26-29</span> Kingdom is like Seed Scattered</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4.p.30.34"><span class="bsrc">30-34</span> Parable of the Mustard Seed</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4.p.35.41"><span class="bsrc">35-41</span> Stills a Storm</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-4" href="./markgospel/GMark04.html#4X">Excursus: Are the Miracles Historical?</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-5">Chapter 5</a></div>
+                                        <ul id="submenu-5" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-5" href="./markgospel/GMark05.html#5.p.1.20"><span class="bsrc">1-20</span> Heals the Gerasene Demoniac</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-5" href="./markgospel/GMark05.html#5.p.21.43"><span class="bsrc">21-43</span> Raises Jairus' Daughter and Heals the Bleeding Woman</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-5" href="./markgospel/GMark05.html#5X">Excursus: Literary Structures</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-6">Chapter 6</a></div>
+                                        <ul id="submenu-6" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6.p.1.6"><span class="bsrc">1-6</span> Rejected at Home</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6.p.7.13"><span class="bsrc">7-13</span> Sends out Apostles</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6.p.14.29"><span class="bsrc">14-29</span> Herod Executes John the Baptist</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6.p.30.44"><span class="bsrc">30-44</span> Feeds 5,000</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6.p.45.56"><span class="bsrc">45-56</span> Walks on Water</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-6" href="./markgospel/GMark06.html#6X">Excursus: Mark without Bethsaida</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-7">Chapter 7</a></div>
+                                        <ul id="submenu-7" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-7" href="./markgospel/GMark07.html#7.p.1.23"><span class="bsrc">1-23</span> Eating with Unwashed Hands</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-7" href="./markgospel/GMark07.html#7.p.24.30"><span class="bsrc">24-30</span> Heals the Daughter of a Woman</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-7" href="./markgospel/GMark07.html#7.p.31.37"><span class="bsrc">31-37</span> Heals a Man with Deafness</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-7" href="./markgospel/GMark07.html#7X">Excursus: Prophecy Fufilled or History Created?</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-8">Chapter 8</a></div>
+                                        <ul id="submenu-8" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8.p.1.13"><span class="bsrc">1-13</span> Feeds 4,000</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8.p.14.21"><span class="bsrc">14-21</span> <span style="font-size:16px">Beware Leaven of Herod &amp; Pharisees</span></a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8.p.22.26"><span class="bsrc">22-26</span> Heals a Blind Man</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8.p.27.33"><span class="bsrc">27-33</span> First Passion Prediction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8.p.34.38"><span class="bsrc">34-38</span> Commandments to Follow Jesus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-8" href="./markgospel/GMark08.html#8X">Excursus: What is the Historical Yield?</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-9">Chapter 9</a></div>
+                                        <ul id="submenu-9" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9.p.1.13"><span class="bsrc">1-13</span> Transfigured</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9.p.14.29"><span class="bsrc">14-29</span> Heals an Epileptic</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9.p.30.37"><span class="bsrc">30-37</span> Second Passion Prediction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9.p.38.41"><span class="bsrc">38-41</span> Whoever is not with me is against me</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9.p.42.50"><span class="bsrc">42-50</span> Cut your Hand</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-9" href="./markgospel/GMark09.html#9X">Excursus: Was it Meant to be Performed?</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-10">Chapter 10</a></div>
+                                        <ul id="submenu-10" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.1.12"><span class="bsrc">1-12</span> Teachings on Divorce</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.13.16"><span class="bsrc">13-16</span> Kingdom Belongs to children</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.17.31"><span class="bsrc">17-31</span> Rich Getting into Heaven</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.32.34"><span class="bsrc">32-34</span> Third Passion Prediction</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.35.45"><span class="bsrc">35-45</span> James &amp; John Asking Jesus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10.p.46.52"><span class="bsrc">46-52</span> Heals of blind Bar-Timaeus</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-10" href="./markgospel/GMark10.html#10X">Excursus: Dependence on Pauline Letters?</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="no_page_sel">
+                                <div class="mtitle1" style="text-align: center;">Passion in Jerusalem</div>
+                                <ul>
+                                    <li class="menu--item menu--item__has_sub_menu menu--subitens__opened">
+                                        <div><a class="menu--link" data-submenu="submenu-11">Chapter 11</a></div>
+                                        <ul id="submenu-11" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11.p.1.11"><span class="bsrc">1-11</span> Enters Jerusalem</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11.p.12.14"><span class="bsrc">12-14</span> Curses the Fig Tree</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11.p.15.19"><span class="bsrc">15-19</span> Cleanses the Temple</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11.p.20.25"><span class="bsrc">20-25</span> Fig Tree Redux</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11.p.26.33"><span class="bsrc">26-33</span> Source of Authority</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-11" href="./markgospel/GMark11.html#11X">Excursus: Temple-Focused</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-12">Chapter 12</a></div>
+                                        <ul id="submenu-12" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12.p.1.12"><span class="bsrc">1-12</span> Parable of the Tenants</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12.p.13.17"><span class="bsrc">13-17</span> Render to Caesar</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12.p.18.27"><span class="bsrc">18-27</span> Marriage After Resurrection</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12.p.28.34"><span class="bsrc">28-34</span> The Greatest Commandment</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12.p.35.44"><span class="bsrc">35-44</span> Poor Widow Gives Everything</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-12" href="./markgospel/GMark12.html#12X">Excursus: The Gospel of Thomas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu">
+                                        <div><a class="menu--link" data-submenu="submenu-13">Chapter 13</a></div>
+                                        <ul id="submenu-13" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-13" href="./markgospel/GMark13.html#13.p.1.31"><span class="bsrc">1-31</span> Predicts the Fall of Temple</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-13" href="./markgospel/GMark13.html#13.p.32.37"><span class="bsrc">32-37</span> Parable of the Watcher</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-13" href="./markgospel/GMark13.html#13X">Excursus: Community and Geography</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu menu--subitens__opened">
+                                        <div><a class="menu--link" data-submenu="submenu-14">Chapter 14</a></div>
+                                        <ul id="submenu-14" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.1.11"><span class="bsrc">1-11</span> Anointed and Betrayed</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.12.25"><span class="bsrc">12-25</span> Last Supper</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.26.31"><span class="bsrc">26-31</span> Predicts Peter's Betrayal</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.32.42"><span class="bsrc">32-42</span> Garden of Gethsemane</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.43.52"><span class="bsrc">43-52</span> Arrested</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.53.65"><span class="bsrc">53-65</span> Tried Before the Sanhedrin</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14.p.66.72"><span class="bsrc">66-72</span> Peter Denies Jesus 3 times</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-14" href="./markgospel/GMark14.html#14X">Excursus: the Naked Young Man of 51-52</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu menu--subitens__opened">
+                                        <div><a class="menu--link" data-submenu="submenu-15">Chapter 15</a></div>
+                                        <ul id="submenu-15" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.1.15"><span class="bsrc">1-15</span> Tried Before Pilate</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.16.20"><span class="bsrc">16-20</span> Mocked by Roman Soldiers</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.21.32"><span class="bsrc">21-32</span> Crucified</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.33.39"><span class="bsrc">33-39</span> Dies</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.40.41"><span class="bsrc">40-41</span> Women Watching</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15.p.42.47"><span class="bsrc">42-47</span> Burried by Joseph of Arimathea</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-15" href="./markgospel/GMark15.html#15X">Excursus: Arguments for Markan Priority</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu--item menu--item__has_sub_menu menu--subitens__opened">
+                                        <div><a class="menu--link" data-submenu="submenu-16">Chapter 16</a></div>
+                                        <ul id="submenu-16" class="sub_menu">
+                                            <li class="sub_menu--item"><a class="nav-link-16" href="./markgospel/GMark16.html#16.p.1.8"><span class="bsrc">1-8</span> Finding Tomb Empty</a></li>
+                                            <li class="sub_menu--item"><a class="nav-link-16" href="./markgospel/GMark16.html#16X">Excursus: The Missing Ending of Mark</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

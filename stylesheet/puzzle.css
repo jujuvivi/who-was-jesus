@@ -1,0 +1,151 @@
+body { margin: 4px;
+		padding: 0px;
+		border: 0px;
+		color : #000;
+		/* background-image: url("images/background.jpg"); */
+			
+	}
+	
+.container {width: 800px; height: 2000px;
+           /* background image: title.jpg; */
+		}
+		   
+.freethought {
+               }	
+/* table  {width: 800px;
+	} */
+	
+a	{color: #873838;}	
+alink { color: #873838; }
+a:visited {
+	/* color: #ooccff; */
+}
+
+
+/* p {  
+	 font-size: 16px;
+		 } */
+	 
+.notbold {
+	 font-size: 16px;
+	 font-weight: 600;}
+	 
+.top   {
+        font-size: 10px;
+        }
+.date {
+       font-size: 15px;
+       font-style: italic;
+       font-weight: bold;}
+               
+blockquote {
+		    font-size: 15px;
+		    font-weight: lighter;}	 
+	 
+.small  {
+        font-size: 12px;
+		}	 
+	 
+/* ul li {font-size: 14px;			
+ } */
+li.small {
+          font-size: 12px;}
+          
+ul.left {list-style-type: none;
+	padding:4px;
+	margin:0px;
+	border: 1px solid #996600;	
+	}
+          
+li.left {
+         font-size: 12px;
+         padding-left: 0px; 
+	}        
+            
+.heading  {
+			font-size: 28px;
+			color: #996600;} 
+
+.subheading   {
+			font-size: 22px;
+			color: #996600;}			
+			
+.subs {
+			font-size: 16px;
+			font-style: italic;
+			color: #996600;
+		}	
+		
+.pieces  {
+			font-size: 18px;
+			font-style: italic;
+			font-weight: bold;
+			color: #996600;
+}
+
+.sub  {
+		font-size:  12px;
+        color: #000000;}
+        		
+.italic  {font-style: italic;}
+.bold    {font-weight: bold;}
+
+p.heading {
+	font-size: 18px; 
+	font-style: italic;
+	font-weight: bold;
+	   }
+	   
+p.initial {	text-indent: 0;
+	text-align: justify;
+	font-size: 16px;	
+		}
+		
+p.indent {text-indent: 15px;
+          font-size: 16px}
+	   
+p.note {border-top: 0.25em double black;
+		border-right: 0.25em double black;
+		border-bottom: 0.25em double black;
+		border-left: 0.25em double black;
+		background: #cccc99;
+		color: #000000;
+	}
+td.note {border-top: 0.25em double black;
+		border-right: 0.25em double black;
+		border-bottom: 0.25em double black;
+		border-left: 0.25em double black;
+		background: #cccc88;
+		color: #000000;
+	}
+	   
+td.block  {border-top: medium solid black;
+		border-left: medium solid white;
+		border-bottom: medium solid black;
+		border-right: medium solid black;
+		/* border-left-color:  #0066666; */
+		padding: 40px;
+		}
+	   
+p.sup   {font-size: 12px;   }
+		
+h1  {
+	font-size: 24px;
+}
+
+h4   {font-size: 14px; }
+	
+.piece  {
+	     font-size: 1.5em;
+         color: #008;
+         font-style: italic;
+         font-weight: bolder;
+                  }
+                  
+.center   {text-align: right;
+			font-size: 1.5em;
+			font-weight: bold;
+			}
+			
+.right {text-align: left;
+		font-size: .5em;}

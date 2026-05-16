@@ -1,0 +1,102 @@
+
+.mark-pink  {
+    background-color: #ffcccc; /* rgb(255, 204, 204); */
+}
+.mark-blue  {
+    background-color:#ccffff; /* rgb(204, 255, 255); */
+}
+.mark-yellow  {
+    background-color:#ffffcc; /* rgb(255, 255, 204) */
+}
+
+div.box-center, div.box-center-less {
+    padding-top:0px;
+    padding-right:6px;
+    margin:auto;
+    margin-top:60px;
+}
+div.box-center-less {
+    margin-top:20px;
+}
+
+div.v-gray {
+    border-left:4px #cccccc solid;
+    margin-top:10px;
+    padding-left:4px;
+}
+div.v-pink {
+    border-left:4px #ffcccc solid;
+    margin-top:10px;
+    padding-left:4px;
+}
+
+table.tblMark {
+    /* padding: 2px; */
+}
+table.tblMark > tbody > tr > td {
+    vertical-align: top;
+    padding:2px 5px;
+}
+table.tblMark > tbody > tr > td:nth-child(1) {
+    background-color: #ffcccc; /* rgb(255, 204, 204) */
+}
+table.tblMark > tbody > tr > td:nth-child(2) {
+    background-color:#ccffff; /* rgb(255, 204, 204) */
+}
+table.tblMark > tbody > tr > td:nth-child(3) {
+    background-color:#ffffcc; /* rgb(255, 204, 204) */
+}
+
+table.tblMark > tbody > tr.mark-row-head > td {
+    background-color: #ccc;
+    /* background-color: #ffcccc; */
+    text-align: center;
+    font-weight: bold;
+}
+
+
+div.first-letter {
+    background-color: #cccccc;
+    margin-top:20px;
+}
+div.first-letter > div::first-letter {
+    padding:4px 10px 4px 10px;
+    /* display:inline-block; */
+}
+
+div.pad-left-start > div, div.pad-left-end > div {
+    text-indent: -20px;
+}
+div.pad-left-start > div:first-letter, div.pad-left-end > div:first-letter {
+    font-weight: bold;
+}
+div.pad-left-start > div:nth-child(1) {
+    padding-left:40px;
+}
+div.pad-left-start > div:nth-child(2) {
+    padding-left:60px;
+}
+div.pad-left-start > div:nth-child(3) {
+    padding-left:80px;
+}
+div.pad-left-start > div:nth-child(4) {
+    padding-left:100px;
+}
+div.pad-left-start > div:nth-child(5) {
+    padding-left:120px;
+}
+div.pad-left-end > div:nth-last-child(5) {
+    padding-left:120px;
+}
+div.pad-left-end > div:nth-last-child(4) {
+    padding-left:100px;
+}
+div.pad-left-end > div:nth-last-child(3) {
+    padding-left:80px;
+}
+div.pad-left-end > div:nth-last-child(2) {
+    padding-left:60px;
+}
+div.pad-left-end > div:nth-last-child(1) {
+    padding-left:40px;
+}
