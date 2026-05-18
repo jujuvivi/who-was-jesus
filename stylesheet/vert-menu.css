@@ -49,7 +49,7 @@ nav.vertical_nav,
     text-align: left;
 }
 .mark-gospel .maintitle {
-    /* width: 250px; */
+    width: 220px; /* 200px not enough */
     padding-top: 4px;
 }
 .maintitle-index {
