@@ -339,12 +339,29 @@ div.left-quote {
     color: #115511;
 }
 
-.quote, .quote a {
+.quote, .quote a, .lquote, .lquote a {
     color: #000080;
     /* Navy */
     /* font-style:italic; */
 }
-
+.lquote {
+    padding-left: 40px;
+    quotes: "“" "”" "‘" "’";
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.lquote::before {
+  content: open-quote;
+}
+.lquote::after {
+  content: close-quote;
+}
+.margint {
+    margin-top:20px;
+}
+.marginb {
+    margin-bottom:20px;
+}
 .src, .src a {
     color: #004070;
     font-style: italic;
@@ -369,7 +386,12 @@ div.left-quote {
     background-color: #ffff96;
     font-weight: bold;
 }
-
+.brown {
+    color: brown;
+}
+.redish {
+    color: rgb(194, 0, 0);
+}
 .sec1 {
     background-color: #d2d2ef;
 }
