@@ -173,6 +173,10 @@ nav.vertical_nav_base {
         /* color: rgba(33, 39, 45, .93); */
         background-color: #bbb; /* #c5ffc5; /* #fff; */
     }
+    .vertical_nav a > a[href]:hover {
+        /* color: rgba(33, 39, 45, .93); */
+        background-color: #ddd; /* #c5ffc5; /* #fff; */
+    }
 }
 .vertical_nav a {
     -webkit-transition: all .3s ease;
