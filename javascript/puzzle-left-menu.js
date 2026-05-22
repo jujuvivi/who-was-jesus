@@ -95,7 +95,7 @@ fctj.menu = {
                     {
                         title: ['Critiques of the Mythicist Case', 'revdis_cri'], // crimyth
                         pages: [
-                            ['../critics/muller1.html', 'B. Muller <a href="#_path_#../critics/muller2.html">Part 2</a> <a href="#_path_#../critics/muller3.html">Part 3</a>', 'mulcrit1'],
+                            ['../critics/muller1.html', 'B. Muller', 'mulcrit1'],
                             ['../critics/gakusei1.html', 'Gakusei Don <a href="#_path_#../critics/gakusei2.html">Part 2</a> <a href="#_path_#../critics/aliet-gakusei.html">Part 3 by J. Aliet</a>', 'gakcrit'],
                             ['../critics/licona.html', 'M. Licona', 'miklic'],
                             ['../critics/goguel.html', 'S.J. Case, M. Goguel', 'casegoguel'],

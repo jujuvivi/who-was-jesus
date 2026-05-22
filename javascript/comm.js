@@ -424,8 +424,13 @@ fctj.scrollMgr = {
 					const divTarget = divTargets[i],
 						divTargetHeader = this.divTargetsHeader[i];
 					let nDivToAdd = Number(divTarget.dataset?.tab_length) || 0;
-					if (nDivToAdd) {
-						nDivToAdd--;
+					// Special case if a single target
+					if (nDivToAdd || (i === 0 && totalDivTargets === 1)) {
+						if (!nDivToAdd) {
+							nDivToAdd = divSources.length - totalDivTargets;
+						} else {
+							nDivToAdd--;
+						}
 						totalDivTargets += nDivToAdd;
 						for(let j=0; j < nDivToAdd; j++) {
 							divTargets.splice(i, 0, divTarget);

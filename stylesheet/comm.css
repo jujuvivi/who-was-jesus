@@ -341,7 +341,7 @@ div.sepSection-none {
     /* font-style:italic; */
 }
 .lquote {
-    padding-left: 40px;
+    padding-left: 30px;
     quotes: "“" "”" "‘" "’";
     margin-top:5px;
     margin-bottom:10px;
@@ -555,6 +555,10 @@ tr.sub-tab table.tblTabs > tbody > tr > td > a {
 }
 tr.sub-tab table.tblTabs > tbody > tr > td.tab_sel > a {
     border-color: blue;
+    font-weight: bold;
+}
+table.tblTabs > tbody > tr > td.tab_sel > a {
+    font-weight: bold;
 }
 
 table.tblTabs > tbody > tr > td > a {
@@ -1545,7 +1549,12 @@ div.font-20 {
 .showHR1 {
     display:none;
 }
-
+.small-hd {
+    font-size:inherit;
+}
+.small-hd2 {
+    font-size:inherit;
+}
 /******************************************************
 ***	  		Medium devices (tablets)	            ***
 *** No Tab change but No Left Menu always visible   ***
@@ -1555,6 +1564,12 @@ div.font-20 {
     /* body {
     overflow-y: auto;
   } */
+    .small-hd {
+        font-size:16px;
+    }
+    .small-hd2 {
+        font-size:14px;
+    }
     a.first-menu {
         margin-top: 2px; /* 15px */
     }
@@ -1684,5 +1699,8 @@ div.font-20 {
     }
     .fontsize_s_LHR2 {
         font-size: inherit;
+    }
+    .lquote {
+        padding-left: 40px;
     }
 }
