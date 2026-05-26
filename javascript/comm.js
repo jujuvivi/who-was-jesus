@@ -94,6 +94,26 @@ fctj.MainTab = class {
 			this.trTab = tblTab.rows[0];
 			this.isSubmenu = isSubmenu;
 
+			// Inject onclick to next and prev button
+			let nextPrevBtn = tblTab.previousElementSibling;
+			
+			if (nextPrevBtn && !nextPrevBtn.classList.contains('psac-slider-and-carousel')) {
+				nextPrevBtn = nextPrevBtn.previousElementSibling;
+			}
+			if (nextPrevBtn?.classList.contains('psac-slider-and-carousel')) {
+				// owl-prev
+				const prevBtn = nextPrevBtn.querySelector('.owl-prev'),
+					nextBtn = nextPrevBtn.querySelector('.owl-next');
+				nextBtn?.addEventListener('click', (e) => {
+					const dotNewIndeex = 2 + this.dots.findIndex((dot) => dot.classList.contains('active'));
+					if (dotNewIndeex < this.dots.length) this._selectDotsUi(dotNewIndeex);
+				});
+				prevBtn?.addEventListener('click', (e) => {
+					const dotNewIndeex = this.dots.findIndex((dot) => dot.classList.contains('active'));
+					if (dotNewIndeex > -1) this._selectDotsUi(dotNewIndeex);
+				});
+			}
+
 			this.tds = Array.from(this.trTab.children).filter(elmt => {
 				if (elmt.tagName === 'TD' && (elmt.classList.contains('tab_sel') || elmt.classList.contains('tab_not_sel'))) {
 					elmt.title = "Click to Expand or Collapse";
@@ -230,6 +250,7 @@ fctj.MainTab = class {
 		}
 
 		_selectDotsUi(index, cells) {
+			cells = cells || this.tdSelected.parentElement.cells;
 			// Show just surrounbing ones in low res.
 			const dots = this.dots,
 				l = dots.length;
