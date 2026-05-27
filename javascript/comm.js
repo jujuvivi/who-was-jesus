@@ -95,15 +95,15 @@ fctj.MainTab = class {
 			this.isSubmenu = isSubmenu;
 
 			// Inject onclick to next and prev button
-			let nextPrevBtn = tblTab.previousElementSibling;
+			let carouselCont = tblTab.previousElementSibling;
 			
-			if (nextPrevBtn && !nextPrevBtn.classList.contains('psac-slider-and-carousel')) {
-				nextPrevBtn = nextPrevBtn.previousElementSibling;
+			if (carouselCont && !carouselCont.classList.contains('psac-slider-and-carousel')) {
+				carouselCont = carouselCont.previousElementSibling;
 			}
-			if (nextPrevBtn?.classList.contains('psac-slider-and-carousel')) {
+			if (carouselCont?.classList.contains('psac-slider-and-carousel')) {
 				// owl-prev
-				const prevBtn = nextPrevBtn.querySelector('.owl-prev'),
-					nextBtn = nextPrevBtn.querySelector('.owl-next');
+				const prevBtn = carouselCont.querySelector('.owl-prev'),
+					nextBtn = carouselCont.querySelector('.owl-next');
 				nextBtn?.addEventListener('click', (e) => {
 					const dotNewIndeex = 2 + this.dots.findIndex((dot) => dot.classList.contains('active'));
 					if (dotNewIndeex < this.dots.length) this._selectDotsUi(dotNewIndeex);
@@ -112,6 +112,46 @@ fctj.MainTab = class {
 					const dotNewIndeex = this.dots.findIndex((dot) => dot.classList.contains('active'));
 					if (dotNewIndeex > -1) this._selectDotsUi(dotNewIndeex);
 				});
+				//
+                const track = tblTab.rows[0]; // querySelector('.carousel-track');
+                //let index = 0;
+                let startX = 0;
+                let currentX = 0;
+                let isDragging = false;
+
+                //function updateCarousel() {
+                //    track.style.transform = `translateX(-${index * 50}%)`; /* 100 */
+                //}
+
+                // Touch events for swipe
+                track?.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+					//console.log('start x=', startX);
+                    isDragging = true;
+                });
+
+                track?.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    currentX = e.touches[0].clientX;
+					//console.log('current x=', currentX);
+                });
+
+                track?.addEventListener('touchend', () => {
+                    if (!isDragging) return;
+                    let diff = startX - currentX;
+                    if (diff > 50) {
+						const dotNewIndeex = 2 + this.dots.findIndex((dot) => dot.classList.contains('active'));
+						if (dotNewIndeex < this.dots.length) this._selectDotsUi(dotNewIndeex);
+                        //index = Math.min(index + 1, items.length - 2);
+                    } else if (diff < -50) {
+                        //index = Math.max(index - 1, 0);
+						const dotNewIndeex = this.dots.findIndex((dot) => dot.classList.contains('active'));
+						if (dotNewIndeex > -1) this._selectDotsUi(dotNewIndeex);
+                    }
+                    //updateCarousel();
+                    isDragging = false;
+                });
+
 			}
 
 			this.tds = Array.from(this.trTab.children).filter(elmt => {
