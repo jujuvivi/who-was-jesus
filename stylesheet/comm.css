@@ -599,7 +599,7 @@ table.tblTabs > tbody > tr.sub-tab > td > div {
 /* adjust div content scrolling behavior */
 div.ListTabContent > div[id].lm-item > div.title2 {
   /* border-top: blue 2px solid; */
-  margin-top: 50px;
+  margin-top: 80px;
   padding-top: 15px;
   position: relative;
   z-index: 1;
